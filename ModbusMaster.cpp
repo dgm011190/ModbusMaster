@@ -77,11 +77,7 @@ Creates class object using specified serial port, Modbus slave ID.
 @param u8MBSlave Modbus slave ID (1..255)
 @ingroup setup
 */
-ModbusMaster::ModbusMaster(uint8_t u8SerialPort, uint8_t u8MBSlave)
-{
-  _u8SerialPort = (u8SerialPort > 3) ? 0 : u8SerialPort;
-  _u8MBSlave = u8MBSlave;
-}
+
 
 
 /**
