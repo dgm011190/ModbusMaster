@@ -235,15 +235,7 @@ class ModbusMaster
     uint8_t  readInputRegisters(uint16_t, uint8_t);
     uint8_t  writeSingleCoil(uint16_t, uint8_t);
     uint8_t  writeSingleRegister(uint16_t, uint16_t);
-    uint8_t  writeMultipleCoils(uint16_t, uint16_t);
-    uint8_t  writeMultipleCoils();
-    uint8_t  writeMultipleRegisters(uint16_t, uint16_t);
-    uint8_t  writeMultipleRegisters();
-    uint8_t  maskWriteRegister(uint16_t, uint16_t, uint16_t);
-    uint8_t  readWriteMultipleRegisters(uint16_t, uint16_t, uint16_t, uint16_t);
-    uint8_t  readWriteMultipleRegisters(uint16_t, uint16_t);
-    
-  private:
+
     uint8_t  _u8SerialPort;                                      ///< serial port (0..3) initialized in constructor
     uint8_t  _u8MBSlave;                                         ///< Modbus slave (1..255) initialized in constructor
     uint16_t _u16BaudRate;                                       ///< baud rate (300..115200) initialized in begin()
